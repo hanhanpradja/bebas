@@ -25,6 +25,10 @@ async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
 
 @bot.command()
+async def hah(ctx, count_heh = 5):
+    await ctx.send("ha" * count_heh)
+
+@bot.command()
 async def pangkatkan(ctx):
     await ctx.send('coba kirim angka yang ingin dipangkatkan')
     angka = await bot.wait_for('message', check=lambda m: m.author == ctx.author and m.channel == ctx.channel)
